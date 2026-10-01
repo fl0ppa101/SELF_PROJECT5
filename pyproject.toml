@@ -9,12 +9,5 @@ description = "Independent HallSim visualization module, specification v2"
 requires-python = ">=3.11"
 dependencies = ["numpy>=1.26,<3", "PyQt6>=6.6,<7", "pyqtgraph>=0.13.7,<0.15"]
 
-[project.optional-dependencies]
-test = ["pytest>=8,<10"]
-
 [tool.setuptools.packages.find]
 include = ["hallsim*"]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-pythonpath = ["."]
