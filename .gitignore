@@ -216,3 +216,29 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local IDE / OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.bak
+*~
+
+# Personal specifications, questionnaires and presentation materials
+/*_TZ*.md
+/*ТЗ*.md
+/questions_gui.md
+/*questions*answers*.pdf
+/private/
+/local/
+
+# Local reports and screenshots (not part of the application)
+/*.docx
+/*.pdf
+/*.png
+/screenshots/
+/tools/build_gui_report.py

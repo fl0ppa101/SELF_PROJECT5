@@ -1,0 +1,15 @@
+[project]
+name = "hallsim"
+version = "0.1.0"
+description = "Interactive Hall sensor and magnetic field simulator"
+requires-python = ">=3.11"
+dependencies = [
+    "PyQt6",
+    "pyqtgraph",
+    "numpy",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+qt_api = "pyqt6"
+pythonpath = ["."]
