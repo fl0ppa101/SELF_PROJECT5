@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hallsim"
+version = "1.0.0"
+description = "Interactive Hall sensor and magnetic field simulator"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "PyQt6>=6.6,<7", "pyqtgraph>=0.13.7,<0.15"]
+
+[tool.setuptools.packages.find]
+include = ["hallsim*"]
+
+[tool.setuptools.package-data]
+hallsim = ["resources/qss/*.qss", "resources/icons/*.svg"]
