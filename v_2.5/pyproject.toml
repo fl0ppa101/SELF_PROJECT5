@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hallsim"
+version = "2.5.0"
+description = "Virtual laboratory for magnetic fields and the Hall effect"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "PyQt6>=6.6,<7", "pyqtgraph>=0.13.7,<0.15", "openpyxl>=3.1,<4"]
+
+[project.gui-scripts]
+hallsim = "hallsim.app.bootstrap:run"
+
+[tool.setuptools.packages.find]
+include = ["hallsim*"]
+
+[tool.setuptools.package-data]
+hallsim = ["resources/qss/*.qss", "resources/icons/*.svg"]
